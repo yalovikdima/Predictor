@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/browser_actions_title_color">
+
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="6dp"
+        android:contentDescription="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title"
+        style="@style/TextStylePredictorShareTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:maxLines="2"
+        app:layout_constraintEnd_toStartOf="@+id/awayTeamNumbers"
+        app:layout_constraintStart_toEndOf="@id/homeTeamNumbers"
+        app:layout_constraintTop_toBottomOf="@+id/appLogo"
+        tools:text="Pronostic de Jeremy" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/league"
+        style="@style/TextStylePredictorShareCompetition"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:maxLines="2"
+        app:layout_constraintEnd_toStartOf="@+id/awayTeamNumbers"
+        app:layout_constraintStart_toEndOf="@+id/homeTeamNumbers"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        tools:text="Ligue" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/stadium"
+        style="@style/TextStylePredictorShareStadium"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:maxLines="2"
+        app:layout_constraintEnd_toStartOf="@+id/awayTeamNumbers"
+        app:layout_constraintStart_toEndOf="@+id/homeTeamNumbers"
+        app:layout_constraintTop_toBottomOf="@+id/league"
+        tools:text="Stade Bollaert-Delelis" />
+
+    <com.origins.predictor.features.prediction.views.PredictionScoreView
+        android:id="@+id/scores"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stadium"
+        app:scoreSeparatorPadding="10dp"
+        tools:layout_height="30dp"
+        tools:layout_width="50dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/date"
+        style="@style/TextStylePredictorShareDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scores"
+        tools:text="16/02/2020" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/time"
+        style="@style/TextStylePredictorShareDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date"
+        tools:text="20:30" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/homeTeamLogo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@id/scores"
+        app:layout_constraintEnd_toStartOf="@id/scores"
+        app:layout_constraintStart_toEndOf="@+id/homeTeamNumbers"
+        app:layout_constraintTop_toTopOf="@id/scores" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/homeTeamName"
+        style="@style/TextStylePredictorShareTeam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        app:layout_constraintEnd_toEndOf="@id/homeTeamLogo"
+        app:layout_constraintStart_toStartOf="@id/homeTeamLogo"
+        app:layout_constraintTop_toBottomOf="@id/homeTeamLogo"
+        tools:text="Team" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/awayTeamLogo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@id/scores"
+        app:layout_constraintEnd_toStartOf="@id/awayTeamNumbers"
+        app:layout_constraintStart_toEndOf="@id/scores"
+        app:layout_constraintTop_toTopOf="@id/scores" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/awayTeamName"
+        style="@style/TextStylePredictorShareTeam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        app:layout_constraintEnd_toEndOf="@id/awayTeamLogo"
+        app:layout_constraintStart_toStartOf="@id/awayTeamLogo"
+        app:layout_constraintTop_toBottomOf="@id/awayTeamLogo"
+        tools:text="Team" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bkg_select_away_score"
+        app:layout_constraintStart_toEndOf="@id/bkg_select_home_score"
+        app:layout_constraintTop_toBottomOf="@+id/time">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/googlePlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:minWidth="114dp"
+            android:minHeight="37dp"
+            android:src="@drawable/predictor_share_google_play"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <FrameLayout
+            android:id="@+id/qrCodeContainer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginStart="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/googlePlay"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/qrCodeTopCorner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|start"
+                tools:src="@drawable/predictor_qr_code_stroke" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/qrCodeImage"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="6dp"
+                android:layout_marginBottom="6dp"
+                tools:src="@drawable/predictor_qr_code" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/qrCodeBottomCorner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|end"
+                android:rotation="180"
+                tools:src="@drawable/predictor_qr_code_stroke" />
+        </FrameLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.origins.predictor.features.prediction.views.PredictionNumberPickerView
+        android:id="@+id/homeTeamNumbers"
+        android:layout_width="55dp"
+        android:layout_height="@dimen/share_number_picker_height"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.origins.predictor.features.prediction.views.PredictionNumberPickerView
+        android:id="@+id/awayTeamNumbers"
+        android:layout_width="55dp"
+        android:layout_height="@dimen/share_number_picker_height"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/bkg_select_home_score"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/predictor_share_number_picker_bkg"
+        app:layout_constraintBottom_toBottomOf="@id/homeTeamNumbers"
+        app:layout_constraintEnd_toEndOf="@+id/homeTeamNumbers" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/bkg_select_away_score"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/predictor_share_number_picker_bkg"
+        app:layout_constraintBottom_toBottomOf="@id/awayTeamNumbers"
+        app:layout_constraintStart_toStartOf="@+id/awayTeamNumbers" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/separator"
+        style="@style/TextStylePredictorScoreSeparator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        android:text="-"
+        android:includeFontPadding="false"
+        app:layout_constraintBottom_toBottomOf="@+id/homeTeamScore"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/homeTeamScore" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/homeTeamScoreInvisible"
+        style="@style/TextStylePredictorScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:includeFontPadding="false"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/separator"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="888" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/homeTeamScore"
+        style="@style/TextStylePredictorScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:includeFontPadding="false"
+        app:layout_constraintEnd_toStartOf="@+id/separator"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="0" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/awayTeamScore"
+        style="@style/TextStylePredictorScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:includeFontPadding="false"
+        app:layout_constraintStart_toEndOf="@+id/separator"
+        app:layout_constraintTop_toTopOf="@+id/homeTeamScore"
+        tools:text="0" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/awayTeamScoreInvisible"
+        style="@style/TextStylePredictorScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:includeFontPadding="false"
+        android:visibility="invisible"
+        app:layout_constraintStart_toEndOf="@+id/separator"
+        app:layout_constraintTop_toTopOf="@+id/homeTeamScore"
+        tools:text="888" />
+
+</merge>

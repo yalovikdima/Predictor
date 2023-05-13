@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="predictor_white">#FFFFFF</color>
+    <color name="predictor_black">#000000</color>
+    <color name="predictor_white_30">#4dd9d9d9</color>
+    <color name="predictor_white_60">#99d9d9d9</color>
+    <color name="predictor_white_80">#CCd9d9d9</color>
+
+    <color name="predictor_transparent">#00000000</color>
+    <color name="predictor_whiteTwo">#d9d9d9</color>
+</resources>

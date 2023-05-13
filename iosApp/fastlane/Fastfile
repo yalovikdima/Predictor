@@ -1,0 +1,3 @@
+import_netco_fastfile
+
+#import '../../../fastlane-plugin-netco/fastlane_generic/Fastfile'

@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Generated using Origins Resources Plugin-->
+<resources>
+    <style name="TextStylePredictorCongratsConfirmButton">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/predictor_congrats_confirm_button</item>
+        <item name="android:lineSpacingExtra">2.0sp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TextStylePredictorCongratsSubtitle">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/predictor_congrats_subtitle</item>
+        <item name="android:lineSpacingExtra">2.0sp</item>
+        <item name="android:letterSpacing">0.00</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TextStylePredictorCongratsTitle">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">21.0sp</item>
+        <item name="android:textColor">@color/predictor_congrats_title</item>
+        <item name="android:lineSpacingExtra">1.0sp</item>
+        <item name="android:letterSpacing">0.00</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TextStylePredictorCountdownNumber">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/predictor_countdown_number</item>
+        <item name="android:lineSpacingExtra">2.0sp</item>
+        <item name="android:letterSpacing">0.00</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TextStylePredictorCountdownText">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/predictor_countdown_text</item>
+        <item name="android:lineSpacingExtra">2.0sp</item>
+        <item name="android:letterSpacing">0.00</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TextStylePredictorGift">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">10.0sp</item>
+        <item name="android:textColor">@color/predictor_gift</item>
+        <item name="android:letterSpacing">0.00</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TextStylePredictorModifiedButton">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/predictor_modified_button</item>
+        <item name="android:lineSpacingExtra">2.0sp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TextStylePredictorModifyButton">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/predictor_modify_button</item>
+        <item name="android:lineSpacingExtra">2.0sp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TextStylePredictorNumberPickerDisableSelected">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/predictor_number_picker_disable_selected</item>
+        <item name="android:lineSpacingExtra">2.0sp</item>
+        <item name="android:letterSpacing">0.00</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TextStylePredictorNumberPickerDisableUnselected">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/predictor_number_picker_disable_unselected</item>
+        <item name="android:lineSpacingExtra">2.0sp</item>
+        <item name="android:letterSpacing">0.00</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TextStylePredictorNumberPickerSelected">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/predictor_number_picker_selected</item>
+        <item name="android:lineSpacingExtra">2.0sp</item>
+        <item name="android:letterSpacing">0.00</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TextStylePredictorNumberPickerShareSelected">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/predictor_number_picker_share_selected</item>
+        <item name="android:letterSpacing">0.00</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TextStylePredictorNumberPickerShareUnselected">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/predictor_number_picker_share_unselected</item>
+        <item name="android:letterSpacing">0.00</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TextStylePredictorNumberPickerUnselected">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/predictor_number_picker_unselected</item>
+        <item name="android:lineSpacingExtra">2.0sp</item>
+        <item name="android:letterSpacing">0.00</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TextStylePredictorScore">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">48.0sp</item>
+        <item name="android:textColor">@color/predictor_score</item>
+        <item name="android:lineSpacingExtra">2.0sp</item>
+        <item name="android:letterSpacing">0.00</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TextStylePredictorScoreDisabled">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">48.0sp</item>
+        <item name="android:textColor">@color/predictor_score_disabled</item>
+        <item name="android:lineSpacingExtra">2.0sp</item>
+        <item name="android:letterSpacing">0.00</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TextStylePredictorScoreSeparator">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">32.0sp</item>
+        <item name="android:textColor">@color/predictor_score_separator</item>
+        <item name="android:lineSpacingExtra">2.0sp</item>
+        <item name="android:letterSpacing">0.00</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TextStylePredictorScoreSeparatorDisabled">
+        <item name="android:fontFamily">@font/roboto_medium</item>
+        <item name="android:textSize">32.0sp</item>
+        <item name="android:textColor">@color/predictor_score_separator_disabled</item>
+        <item name="android:lineSpacingExtra">2.0sp</item>
+        <item name="android:letterSpacing">0.00</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TextStylePredictorScoreSeparatorShare">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">24.0sp</item>
+        <item name="android:textColor">@color/predictor_score_separator_share</item>
+        <item name="android:lineSpacingExtra">2.0sp</item>
+        <item name="android:letterSpacing">0.00</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TextStylePredictorScoreShare">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">36.0sp</item>
+        <item name="android:textColor">@color/predictor_score_share</item>
+        <item name="android:letterSpacing">0.00</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TextStylePredictorShareButton">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/predictor_share_button</item>
+        <item name="android:lineSpacingExtra">2.0sp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TextStylePredictorShareButtonDisable">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/predictor_share_button_disable</item>
+        <item name="android:lineSpacingExtra">2.0sp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TextStylePredictorShareCompetition">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/predictor_share_competition</item>
+        <item name="android:letterSpacing">0.00</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TextStylePredictorShareDate">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/predictor_share_date</item>
+        <item name="android:letterSpacing">0.00</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TextStylePredictorShareStadium">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/predictor_share_stadium</item>
+        <item name="android:letterSpacing">0.00</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TextStylePredictorShareTeam">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/predictor_share_team</item>
+        <item name="android:lineSpacingExtra">6.0sp</item>
+        <item name="android:letterSpacing">0.00</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TextStylePredictorShareTitle">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/predictor_share_title</item>
+        <item name="android:letterSpacing">0.00</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TextStylePredictorSponsorPresentedBy">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/predictor_sponsor_presented_by</item>
+        <item name="android:lineSpacingExtra">2.0sp</item>
+        <item name="android:letterSpacing">0.00</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TextStylePredictorSubtitle">
+        <item name="android:fontFamily">@font/roboto_light</item>
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/predictor_subtitle</item>
+        <item name="android:lineSpacingExtra">3.0sp</item>
+        <item name="android:letterSpacing">0.00</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TextStylePredictorTerms">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/predictor_terms</item>
+        <item name="android:letterSpacing">0.00</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TextStylePredictorTitle">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">@color/predictor_title</item>
+        <item name="android:lineSpacingExtra">4.0sp</item>
+        <item name="android:letterSpacing">0.00</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TextStylePredictorValidateButton">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/predictor_validate_button</item>
+        <item name="android:lineSpacingExtra">2.0sp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TextStylePredictorValidateButtonDisable">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">@color/predictor_validate_button_disable</item>
+        <item name="android:lineSpacingExtra">2.0sp</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TextStylePredictorValidateEditText">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/predictor_validate_editText</item>
+        <item name="android:lineSpacingExtra">2.0sp</item>
+        <item name="android:letterSpacing">0.00</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TextStylePredictorValidateHintEditText">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/predictor_validate_hint_editText</item>
+        <item name="android:lineSpacingExtra">2.0sp</item>
+        <item name="android:letterSpacing">0.00</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TextStylePredictorValidateSubtitle">
+        <item name="android:fontFamily">@font/roboto_regular</item>
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">@color/predictor_validate_subtitle</item>
+        <item name="android:lineSpacingExtra">2.0sp</item>
+        <item name="android:letterSpacing">0.00</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TextStylePredictorValidateTitle">
+        <item name="android:fontFamily">@font/roboto_bold</item>
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/predictor_validate_title</item>
+        <item name="android:lineSpacingExtra">2.0sp</item>
+        <item name="android:letterSpacing">0.00</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+</resources>

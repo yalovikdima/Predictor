@@ -1,0 +1,152 @@
+---
+xcodegen:
+  name: iosApp
+  attributes:
+    ORGANIZATIONNAME: Origins-Digital
+  options:
+    minimumXcodeGenVersion: 2.1.0
+    xcodeVersion: "~> 13"
+    indentWidth: 2
+    tabWidth: 2
+  configs:
+    Debug: debug
+    AdHoc: release
+    InHouse: release
+    Production: release
+  targets:
+    iosApp:
+      type: application
+      platform: iOS
+      deploymentTarget: '12.0'
+      dependencies:
+      - target: PredictorSDK
+      sources:
+      - path: iosApp
+        excludes:
+        - Modules
+      info:
+        path: iosApp/Info.plist
+        properties:
+          CFBundleDisplayName: Predictor
+          ITSAppUsesNonExemptEncryption: false
+          NSAppTransportSecurity:
+            NSAllowsArbitraryLoads: true
+          LSRequiresIPhoneOS: true
+          NSPhotoLibraryAddUsageDescription: The app needs to be able to save a picture
+            to your library
+          UIRequiredDeviceCapabilities:
+          - arm64
+          CFBundleURLTypes:
+          - CFBundleURLSchemes: []
+          UILaunchStoryboardName: LaunchScreen
+          UIStatusBarHidden: true
+          UIRequiresFullScreen: true
+          UISupportedInterfaceOrientations: []
+          UISupportedInterfaceOrientations~ipad: []
+          UIAppFonts: []
+          UIBackgroundModes:
+          - remote-notification
+          - audio
+          FirebaseAutomaticScreenReportingEnabled: false
+          CFBundleDevelopmentRegion: en
+      entitlements:
+        path: iosApp/iosApp.entitlements
+        properties:
+          aps-environment: development
+      settings:
+        base:
+          TARGETED_DEVICE_FAMILY:
+          - 1
+          DEVELOPMENT_TEAM: AEN82QY5V4
+          PRODUCT_BUNDLE_IDENTIFIER: com.origins.predictor
+          SWIFT_VERSION: '5.1'
+          ALWAYS_SEARCH_USER_PATHS: 'NO'
+          CODE_SIGN_STYLE: Automatic
+          ENABLE_BITCODE: 'NO'
+          ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES: "$(inherited)"
+          CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED: 'YES'
+          PRODUCT_MODULE_NAME: Base
+    PredictorSDK:
+      type: framework
+      platform: iOS
+      deploymentTarget: 12.0
+      sources:
+      - path: "../iOS_Sources"
+        headerVisibility: public
+      info:
+        path: "../iOS_Sources/Info.plist"
+        properties:
+          CFBundleDisplayName: PredictorSDK
+          ITSAppUsesNonExemptEncryption: false
+          NSAppTransportSecurity:
+            NSAllowsArbitraryLoads: true
+          LSRequiresIPhoneOS: true
+          UIRequiredDeviceCapabilities:
+          - arm64
+          CFBundleURLTypes:
+          - CFBundleURLSchemes: []
+          UILaunchStoryboardName: LaunchScreen
+          UIStatusBarHidden: true
+          UIRequiresFullScreen: true
+          UISupportedInterfaceOrientations: []
+          UISupportedInterfaceOrientations~ipad: []
+          UIAppFonts: []
+          CFBundleDevelopmentRegion: en
+      settings:
+        base:
+          MODULEMAP_PRIVATE_FILE: "$(SRCROOT)/../iOS_Sources/_private/RxCocoa/RxCocoa/Runtime/predictor_private.modulemap"
+          SWIFT_INCLUDE_PATHS: "$(SRCROOT)/../iOS_Sources/_private/RxCocoa/RxCocoa/Runtime"
+          HEADER_SEARCH_PATH: "$(SRCROOT)/../iOS_Sources/_private/RxCocoa/RxCocoa/Runtime"
+          CLANG_ENABLE_MODULES: true
+          SUPPORTS_MACCATALYST: false
+          SUPPORTED_PLATFORMS: iphonesimulator iphoneos
+          PRODUCT_BUNDLE_IDENTIFIER: com.dev.PredictorSDK
+          SWIFT_ACTIVE_COMPILATION_CONDITIONS: BUNDLED_SDK
+          SWIFT_VERSION: '5.1'
+          ENABLE_BITCODE: 'NO'
+          BUILD_LIBRARY_FOR_DISTRIBUTION: 'YES'
+        configs:
+          Production:
+            PRODUCT_BUNDLE_IDENTIFIER: com.origins.predictor
+frameworks:
+  dependencies:
+  - repo: git@github.com:netcosports/Origins_Product_Dependencies_iOS.git
+    tag: 1.1.5
+    destination_path: "../iOS_Sources/Dependencies"
+    source_path: Sources
+  product_name: predictor
+  module_name: PredictorSDK
+  name: PredictorSDK
+  kmm_name: predictorShared
+  kmm_framework_path: "../predictorShared/build"
+  ios_version:
+  - ".v12"
+  package_dependencies: []
+  swift_version:
+  - ".v5"
+  summary: PredictorSDK summary
+  homepage: https://github.com/netcosports
+  author_name: Sergei Mikhan
+  author_email: sergei@netcosports.com
+  deployment_target: '12.0'
+  podspec_dependencies: []
+fastlane:
+  development:
+    firebase_groups:
+    - netco-sports-belarus
+    - product-team
+  production:
+    firebase_groups:
+    - netco-sports-belarus
+    - product-team
+swiftgen:
+  input_dir: "../../iOS_Sources/Resources/Resources"
+  output_dir: "../../iOS_Sources/Resources/Generated/"
+  fonts:
+    inputs: Fonts
+    outputs:
+    - templatePath: "../../iOS_Sources/Resources/Resources/fonts.stencil"
+      output: Fonts.swift
+      params:
+        publicAccess: false
+        enumName: Fonts

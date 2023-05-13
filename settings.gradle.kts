@@ -1,0 +1,20 @@
+rootProject.name = "Predictor"
+
+include(":android:predictor")
+include(":android:sample")
+include(":predictorShared")
+
+include(":android:customizations:fff")
+include(":android:customizations:infront_whitelabel")
+include(":android:customizations:infront_genoa")
+include(":android:customizations:infront_hellas")
+include(":android:customizations:infront_lazio")
+include(":android:customizations:infront_sampdoria")
+include(":android:customizations:infront_udinese")
+include(":android:customizations:fiorentina")
+include(":android:customizations:whitelabel")
+include(":android:customizations:clubapp_whitelabel")
+include(":android:customizations:clubapp_vitoria")
+include(":android:customizations:clubapp_le_havre")
+include(":android:customizations:clubapp_asse")
+include(":android:customizations:clubapp_clermont")

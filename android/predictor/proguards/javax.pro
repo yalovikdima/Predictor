@@ -1,0 +1,2 @@
+-dontwarn javax.lang.model.util.SimpleAnnotationValueVisitor7
+-dontwarn javax.lang.model.util.SimpleTypeVisitor7

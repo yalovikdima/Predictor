@@ -1,0 +1,34 @@
+#!/usr/bin/env groovy
+
+@Library('jenkins-shared-library@3.21.0') _
+
+product_kmm_library_default_declarative_flow(
+   androidKeystoreId: "android_keystore_common_app",
+   baseModule: "android:predictor",
+   sharedModule: "predictorShared",
+   productVersion: "2.0",
+   guessCustomization: true, // enables the "guess customization mode" by scanning changeset for customizations occurences
+   customizations: [
+      "whitelabel",
+      "fff",
+      "infront_whitelabel",
+      "infront_hellas",
+      "infront_lazio",
+      "infront_genoa",
+      "infront_sampdoria",
+      "infront_udinese",
+      "fiorentina",
+      "clubapp_whitelabel",
+      "clubapp_vitoria",
+      "clubapp_le_havre",
+      "clubapp_asse",
+      "clubapp_clermont"
+   ],
+   slack: [
+      "#belarus-trivia-predictor-motm"
+   ],
+   defaultReleaseType: "adhoc",
+   defaultConfiguration: "AdHoc",
+   iosNodeLabel: "xcode13",
+  jira: [project: "PRED"]
+)

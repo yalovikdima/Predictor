@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="315dp"
+        android:layout_height="wrap_content"
+        android:background="@color/predictor_congrats_bkg"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/close"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="9dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title"
+            style="@style/TextStylePredictorCongratsTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            tools:text="Validate your vote" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/subTitle"
+            style="@style/TextStylePredictorCongratsSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="42dp"
+            android:gravity="center"
+            android:maxLines="3"
+            tools:text="And try to participate in the raffle to win rewards." />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/image"
+            android:layout_width="80dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:scaleType="centerCrop" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp">
+
+            <com.origins.predictor.features.prediction.views.PredictionScoreView
+                android:id="@+id/score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:scoreSeparatorPadding="20dp"
+                tools:layout_height="30dp"
+                tools:layout_width="50dp" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/homeTeamLogo"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/score"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/awayTeamLogo"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="40dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/score"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/confirmButton"
+            style="@style/TextStylePredictorCongratsConfirmButton"
+            android:layout_width="215dp"
+            android:layout_height="45dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="55dp"
+            android:layout_marginBottom="27dp"
+            android:background="@drawable/predictor_congrants_confirm_button_bkg"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lastName"
+            app:textAllCaps="true" />
+    </LinearLayout>
+</ScrollView>

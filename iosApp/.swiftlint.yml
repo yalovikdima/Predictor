@@ -1,0 +1,15 @@
+excluded:
+  - Pods
+line_length: 150
+nesting:
+  type_level: 5
+identifier_name:
+  excluded:
+    - id
+    - ok
+    - to
+    - x
+    - y
+    - i
+disabled_rules:
+  - vertical_parameter_alignment

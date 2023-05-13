@@ -1,0 +1,10 @@
+clean true
+
+export_options({
+  compileBitcode: false
+})
+
+build_path './build'
+output_directory './build'
+buildlog_path './build'
+derived_data_path './build/DerivedData'

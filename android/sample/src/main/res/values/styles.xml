@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="PredictorTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/predictor_black</item>
+        <item name="colorPrimaryVariant">@color/predictor_black</item>
+        <item name="colorOnPrimary">@color/predictor_white</item>
+        <item name="colorSecondary">@color/predictor_primary_color</item>
+        <item name="colorSecondaryVariant">@color/predictor_primary_color</item>
+        <item name="colorOnSecondary">@color/predictor_white</item>
+        <item name="colorError">@color/predictor_primary_color</item>
+        <item name="colorOnError">@color/predictor_white</item>
+        <item name="colorSurface">@color/predictor_white</item>
+        <item name="colorOnSurface">@color/predictor_black</item>
+        <item name="android:colorBackground">@color/predictor_white</item>
+        <item name="colorOnBackground">@color/predictor_black</item>
+
+
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+    </style>
+</resources>

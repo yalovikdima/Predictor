@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Generated using Origins Resources Plugin-->
+<resources>
+    <string name="predictor.title.question">"Qual é o seu prognóstico?"</string>
+    <string name="predictor.title.prognosis">"Seu prognóstico"</string>
+    <string name="predictor.timer.days">"DIAS"</string>
+    <string name="predictor.timer.hours">"HRS"</string>
+    <string name="predictor.timer.minutes">"MIN"</string>
+    <string name="predictor.sponsor.presentedBy">"Apresentado por"</string>
+    <string name="predictor.button.validate">"validar"</string>
+    <string name="predictor.button.modify">"modificar"</string>
+    <string name="predictor.button.share">"compartilhado"</string>
+    <string name="predictor.validate.title">"Valide seu voto"</string>
+    <string name="predictor.validate.description">"E tente participar do sorteio para ganhar recompensas."</string>
+    <string name="predictor.validate.first_name">"Primeiro nome"</string>
+    <string name="predictor.validate.last_name">"Último nome"</string>
+    <string name="predictor.validate.email">"E-mail"</string>
+    <string name="predictor.validate.error">"Não pode estar vazio"</string>
+    <string name="predictor.validate.send">"mandar"</string>
+    <string name="predictor.title.toLate">"Tarde demais para fazer um prognóstico"</string>
+    <string name="predictor.title.lost">"Da próxima vez vai ser bom!"</string>
+    <string name="predictor.title.win">"Uau!"</string>
+    <string name="predictor.error">"Erro"</string>
+    <string name="predictor.share.title">"Seu prognóstico"</string>
+    <string name="predictor.share.status.final">"Final"</string>
+    <string name="predictor.error.not_available">"Nenhum jogo está disponível por enquanto, estamos trabalhando nele."</string>
+    <string name="predictor.error.api">"Lamentamos, algo deu errado. Por favor, tente novamente."</string>
+    <string name="predictor.error.email_incorrect">"E-mail incorreto"</string>
+    <string name="predictor.button.modified">"modificado"</string>
+    <string name="predictor.share.my_prognosis">"Meu prognóstico"</string>
+    <string name="predictor.common.ok">"OK"</string>
+    <string name="predictor.popup.title">"Parabéns!"</string>
+    <string name="predictor.popup.description">"Sua participação em"</string>
+    <string name="predictor.popup.confirm">"confirme"</string>
+    <string name="predictor.not_available.title">"Bem-vindo ao Preditor!"</string>
+    <string name="predictor.not_available.description">"Predictor estará disponível em breve!"</string>
+    <string name="predictor.share.prognosis_of">"Prognóstico de %s"</string>
+    <string name="predictor.notification.title.win">"👏 Uau!"</string>
+    <string name="predictor.notification.title.lost">"❌ Da próxima vez vai ser bom!"</string>
+    <string name="predictor.text.terms">"Termos e Condições"</string>
+</resources>

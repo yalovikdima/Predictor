@@ -1,0 +1,18 @@
+<manifest package="com.origins.predictor"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <application>
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+
+        <provider
+            android:name="com.origins.predictor.base.coreui.utils.sharing.PredictorShareProvider"
+            android:authorities="${applicationId}.share.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/share_provider_paths" />
+        </provider>
+    </application>
+</manifest>

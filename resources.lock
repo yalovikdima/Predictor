@@ -1,0 +1,60 @@
+{
+  "customizations": [
+    {
+      "name": "clubapp_le_havre",
+      "version": 2
+    },
+    {
+      "name": "fff",
+      "version": 1
+    },
+    {
+      "name": "infront_sampdoria",
+      "version": 2
+    },
+    {
+      "name": "fiorentina",
+      "version": 1
+    },
+    {
+      "name": "clubapp_vitoria",
+      "version": 6
+    },
+    {
+      "name": "infront_lazio",
+      "version": 2
+    },
+    {
+      "name": "infront_whitelabel",
+      "version": 2
+    },
+    {
+      "name": "infront_udinese",
+      "version": 2
+    },
+    {
+      "name": "clubapp_whitelabel",
+      "version": 4
+    },
+    {
+      "name": "infront_genoa",
+      "version": 3
+    },
+    {
+      "name": "clubapp_asse",
+      "version": 4
+    },
+    {
+      "name": "infront_hellas",
+      "version": 2
+    },
+    {
+      "name": "whitelabel",
+      "version": 9
+    },
+    {
+      "name": "clubapp_clermont",
+      "version": 2
+    }
+  ]
+}

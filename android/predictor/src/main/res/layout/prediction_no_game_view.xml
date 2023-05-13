@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/predictor_secondary_color"
+    tools:parentTag="com.origins.predictor.features.prediction.views.noGame.PredictionNoGameView">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/content"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.origins.predictor.features.prediction.views.PredictionHeaderView
+                android:id="@+id/header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="58dp"
+                tools:src="@drawable/predictor_not_available_image" />
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.origins.predictor.features.prediction.views.PredictionNumberPickerView
+        android:id="@+id/homeTeamNumberPicker"
+        android:layout_width="60dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
+        android:elevation="8dp"
+        android:requiresFadingEdge="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/homeTeamNumberBackground"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:contentDescription="@null"
+        android:src="@drawable/predictor_number_picker_selected_item_disable_bkg"
+        app:layout_constraintBottom_toBottomOf="@id/homeTeamNumberPicker"
+        app:layout_constraintEnd_toEndOf="@id/homeTeamNumberPicker"
+        app:layout_constraintTop_toTopOf="@id/homeTeamNumberPicker" />
+
+
+    <com.origins.predictor.features.prediction.views.PredictionNumberPickerView
+        android:id="@+id/awayTeamNumberPicker"
+        android:layout_width="60dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
+        android:elevation="8dp"
+        android:requiresFadingEdge="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/awayTeamNumberBackground"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:importantForAccessibility="no"
+        android:src="@drawable/predictor_number_picker_selected_item_disable_bkg"
+        app:layout_constraintBottom_toBottomOf="@id/awayTeamNumberPicker"
+        app:layout_constraintStart_toStartOf="@id/awayTeamNumberPicker"
+        app:layout_constraintTop_toTopOf="@id/awayTeamNumberPicker" />
+
+</merge>

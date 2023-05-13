@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/predictor_congrats_bkg">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/title"
+            style="@style/TextStylePredictorValidateTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Validate your vote" />
+
+        <TextView
+            android:id="@+id/description"
+            style="@style/TextStylePredictorValidateSubtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="42dp"
+            android:gravity="center"
+            android:maxLines="3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            tools:text="And try to participate in the raffle to win rewards." />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/firstName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:maxLength="30"
+            android:paddingBottom="20dp"
+            android:textColorHint="@color/predictor_validate_hint_editText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/description"
+            tools:hint="First Name"
+            tools:textColor="@color/predictor_primary_color" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/lastName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:maxLength="30"
+            android:paddingBottom="20dp"
+            android:textColorHint="@color/predictor_validate_hint_editText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/firstName"
+            tools:hint="Last Name"
+            tools:textColor="@color/predictor_primary_color" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/sendButton"
+            style="@style/TextStylePredictorValidateButton"
+            android:layout_width="215dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginBottom="27dp"
+            android:background="@drawable/predictor_validate_button_bkg"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lastName"
+            app:textAllCaps="true" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
